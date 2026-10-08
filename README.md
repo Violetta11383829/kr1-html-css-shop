@@ -75,3 +75,5 @@ GitHub Pages: **https://violetta11383829.github.io/kr1-html-css-shop/**
 
 ФИО: Чижова Виолетта
 Группа: ЭФБО-13-25
+Репозиторий: https://github.com/Violetta11383829/kr1-html-css-shop
+Сайт: https://violetta11383829.github.io/kr1-html-css-shop/

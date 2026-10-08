@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Каталог товаров учебного интернет-магазина.">
-<title>Каталог товаров – Учебный интернет-магазин</title>
+<meta name="description" content="Учебный интернет-магазин: главная страница.">
+<title>Главная – Учебный интернет-магазин</title>
 <link rel="stylesheet" href="css/style.css">
 <script src="js/main.js" defer></script>
 </head>
@@ -29,45 +29,27 @@
 </header>
 
 <main>
-<nav class="breadcrumbs" aria-label="Хлебные крошки">
-<a href="index.html">Главная</a>
-<span>Каталог</span>
-</nav>
+<section class="hero">
+<h1>Учебный интернет-магазин</h1>
+<p>
+ShopProject — магазин удобной одежды и аксессуаров для учёбы, прогулок и повседневной жизни.
+Выбирайте товары в каталоге и оставляйте заявку на сайте.
+</p>
+<a class="button" href="#popular">Перейти к товарам</a>
+</section>
 
-<section class="catalog-layout">
-<aside class="catalog-filters">
-<h2>Фильтры</h2>
-<form class="filters-form" action="#" method="get">
-<fieldset>
-<legend>Категория</legend>
-<label>
-<input type="radio" name="category" value="all" checked>
-Все товары
-</label>
-<label>
-<input type="radio" name="category" value="clothes">
-Одежда
-</label>
-<label>
-<input type="radio" name="category" value="accessories">
-Аксессуары
-</label>
-</fieldset>
-<fieldset>
-<legend>Цена</legend>
-<label for="price-from">От</label>
-<input id="price-from" name="price-from" type="number" min="0" placeholder="0">
-<label for="price-to">До</label>
-<input id="price-to" name="price-to" type="number" min="0" placeholder="10000">
-</fieldset>
-<button class="button" type="submit">Применить</button>
-</form>
-</aside>
+<section class="section" id="advantages">
+<h2>Преимущества магазина</h2>
+<ul class="advantages-list">
+<li>качественные материалы;</li>
+<li>понятный каталог с подробными карточками товаров;</li>
+<li>быстрое оформление заявки;</li>
+<li>самовывоз и доставка курьером.</li>
+</ul>
+</section>
 
-<section class="catalog-products">
-<h1>Каталог товаров</h1>
-<p>Выберите товар и оформите заявку: мы свяжемся с вами для подтверждения заказа.</p>
-
+<section class="section" id="popular">
+<h2>Популярные товары</h2>
 <div class="products-grid">
 
 <article class="product-card">
@@ -103,10 +85,17 @@
 
 </div>
 </section>
-</section>
+
+<aside class="aside-info">
+<h2>Нужна консультация?</h2>
+<p>
+Если вы не уверены в выборе размера или товара, оставьте заявку на
+<a href="order.html">странице оформления</a>, и мы свяжемся с вами.
+</p>
+</aside>
 </main>
 
-<footer>
+<footer id="contacts">
 <p>&copy; 2026 Учебный проект. Все права защищены.</p>
 <p>Дисциплина: Фронтенд и бэкенд разработка</p>
 </footer>

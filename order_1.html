@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Страница оформления заявки в учебном интернет-магазине.">
+<title>Оформление заявки – Учебный интернет-магазин</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<div class="site-header">
+<a class="site-logo" href="index.html">ShopProject</a>
+<nav class="site-nav" aria-label="Основная навигация">
+<ul class="site-nav__list">
+<li><a href="index.html">Главная</a></li>
+<li><a href="catalog.html">Каталог</a></li>
+<li><a href="product.html">Карточка товара</a></li>
+<li><a href="order.html">Оформление заявки</a></li>
+<li><a href="contacts.html">Контакты</a></li>
+<li><a href="index.html#advantages">Преимущества</a></li>
+<li><a href="index.html#popular">Популярные товары</a></li>
+<li><a href="index.html#contacts">Обратная связь</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<nav class="breadcrumbs" aria-label="Хлебные крошки">
+<a href="index.html">Главная</a>
+<span>Оформление заявки</span>
+</nav>
+
+<section class="order-page">
+<h1>Оформление заявки</h1>
+<p>Заполните форму, и мы свяжемся с вами для подтверждения заказа. Поля со знаком * обязательны.</p>
+
+<form class="order-form order-page__form" action="#" method="post">
+
+<fieldset>
+<legend>Контактные данные</legend>
+
+<div class="form-field">
+<label for="page-name">Имя *</label>
+<input id="page-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" required>
+</div>
+
+<div class="form-field">
+<label for="page-email">E-mail *</label>
+<input id="page-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" required>
+</div>
+
+<div class="form-field">
+<label for="page-phone">Телефон *</label>
+<input id="page-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
+<small>Формат: +7 (900) 000-00-00</small>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Заказ</legend>
+
+<div class="form-field">
+<label for="page-product">Товар *</label>
+<select id="page-product" name="product" required>
+<option value="">Выберите товар</option>
+<option value="hoodie">Худи – 3500 руб.</option>
+<option value="jacket">Куртка – 7000 руб.</option>
+<option value="backpack">Рюкзак – 4000 руб.</option>
+</select>
+</div>
+
+<div class="form-field">
+<label for="page-quantity">Количество</label>
+<input id="page-quantity" name="quantity" type="number" min="1" max="10" value="1">
+</div>
+
+<div class="form-field">
+<span class="form-field__title">Способ получения</span>
+<label><input type="radio" name="delivery" value="pickup" checked> Самовывоз</label>
+<label><input type="radio" name="delivery" value="courier"> Доставка курьером</label>
+</div>
+
+<div class="form-field">
+<label for="page-date">Желаемая дата связи</label>
+<input id="page-date" name="date" type="date">
+</div>
+
+<div class="form-field">
+<label for="page-comment">Комментарий</label>
+<textarea id="page-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
+</div>
+</fieldset>
+
+<div class="form-field form-field--checkbox">
+<label>
+<input id="page-agreement" name="agreement" type="checkbox" required>
+Я согласен на обработку данных *
+</label>
+</div>
+
+<div class="form-actions">
+<button type="reset">Очистить</button>
+<button class="button" type="submit">Отправить заявку</button>
+</div>
+
+</form>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 Учебный проект. Все права защищены.</p>
+<p>Дисциплина: Фронтенд и бэкенд разработка</p>
+</footer>
+
+</body>
+</html>

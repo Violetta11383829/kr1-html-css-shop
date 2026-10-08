@@ -14,6 +14,8 @@ GitHub Pages: **https://violetta11383829.github.io/kr1-html-css-shop/**
 
 - `index.html` – главная страница;
 - `catalog.html` – каталог товаров;
+- `product.html` - карточка товара;
+- `order.html` - оформление заявки;
 - `contacts.html` – контактная информация;
 - `css/style.css` – файл стилей;
 - `js/main.js` – файл JavaScript;

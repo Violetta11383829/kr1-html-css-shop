@@ -74,4 +74,4 @@ GitHub Pages: **https://violetta11383829.github.io/kr1-html-css-shop/**
 ## Автор
 
 ФИО: Чижова Виолетта
-Группа: О-13-25
+Группа: ЭФБО-13-25

@@ -1,0 +1,6 @@
+/* Дополнительные стили доступности (A11y). */
+:focus-visible{outline:3px solid #0057b8;outline-offset:3px}
+.site-nav__list a[aria-current="page"]{color:#fff;background:#003f86}
+.form-field small,.breadcrumbs{color:#4b5563}
+.form-error{color:#b00020}
+.skip-link:focus-visible{outline:3px solid #ffbf47;outline-offset:3px}

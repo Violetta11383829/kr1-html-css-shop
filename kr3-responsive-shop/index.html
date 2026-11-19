@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Учебный интернет-магазин: главная страница.">
 <title>Главная – Учебный интернет-магазин</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">\n<link rel="stylesheet" href="css/responsive.css">\n<link rel="stylesheet" href="css/a11y.css">
 <script src="js/main.js" defer></script>
 </head>
-<body>
+<body>\n<a class="skip-link" href="#main">Перейти к основному содержимому</a>
 
 <header>
 <div class="site-header">
 <a class="site-logo" href="index.html">ShopProject</a>
 <nav class="site-nav" aria-label="Основная навигация">
 <ul class="site-nav__list">
-<li><a href="index.html">Главная</a></li>
+<li><a href="index.html" aria-current="page">Главная</a></li>
 <li><a href="catalog.html">Каталог</a></li>
 <li><a href="product.html">Карточка товара</a></li>
 <li><a href="order.html">Оформление заявки</a></li>
@@ -28,7 +28,7 @@
 </div>
 </header>
 
-<main>
+<main id="main">
 <section class="hero">
 <h1>Учебный интернет-магазин</h1>
 <p>
@@ -53,7 +53,7 @@ ShopProject — магазин удобной одежды и аксессуар
 <div class="products-grid">
 
 <article class="product-card">
-<img class="product-card__image" src="images/hoodie.jpg" alt="Худи для повседневного гардероба" width="400" height="300">
+<picture class="product-card__media">\n<source srcset="../images/hoodie.jpg" type="image/jpeg">\n<img class="product-card__image" src="../images/hoodie.jpg" srcset="../images/hoodie.jpg 400w" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw" alt="Худи для повседневного гардероба" width="400" height="300" loading="lazy">\n</picture>
 <h3>Худи</h3>
 <p>Стильное и комфортное худи для повседневного гардероба, прогулок и активного отдыха. Мягкий трикотаж с начесом приятен к телу, отлично сохраняет тепло и позволяет коже дышать.</p>
 <p>Цена: 3500 руб.</p>
@@ -64,7 +64,7 @@ ShopProject — магазин удобной одежды и аксессуар
 </article>
 
 <article class="product-card">
-<img class="product-card__image" src="images/jacket.jpg" alt="Куртка-оверсайз унисекс" width="400" height="300">
+<picture class="product-card__media">\n<source srcset="../images/jacket.jpg" type="image/jpeg">\n<img class="product-card__image" src="../images/jacket.jpg" srcset="../images/jacket.jpg 400w" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw" alt="Куртка-оверсайз унисекс" width="400" height="300" loading="lazy">\n</picture>
 <h3>Куртка</h3>
 <p>Стильная куртка-оверсайз унисекс — базовая модель свободного кроя, разработанная для мужчин и женщин. Идеально подходит для уличного стиля, спорта и повседневной носки.</p>
 <p>Цена: 7000 руб.</p>
@@ -74,7 +74,7 @@ ShopProject — магазин удобной одежды и аксессуар
 </article>
 
 <article class="product-card">
-<img class="product-card__image" src="images/backpack.jpg" alt="Городской рюкзак" width="400" height="300">
+<picture class="product-card__media">\n<source srcset="../images/backpack.jpg" type="image/jpeg">\n<img class="product-card__image" src="../images/backpack.jpg" srcset="../images/backpack.jpg 400w" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw" alt="Городской рюкзак" width="400" height="300" loading="lazy">\n</picture>
 <h3>Рюкзак</h3>
 <p>Вместительный городской рюкзак с отделением для ноутбука и ткани, не боящейся дождя. Удобные лямки и карман на молнии.</p>
 <p>Цена: 4000 руб.</p>

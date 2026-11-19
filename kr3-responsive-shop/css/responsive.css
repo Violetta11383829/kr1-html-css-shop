@@ -1,0 +1,23 @@
+/* Адаптивные стили КР №3. Mobile First. */
+*,*::before,*::after{box-sizing:border-box} html{scroll-behavior:smooth} img,video{max-width:100%;height:auto} body{overflow-x:hidden}
+.container,.main,.section{width:min(100% - 32px,1200px);margin-inline:auto}.section{padding-block:clamp(24px,5vw,64px)}
+header,main,footer{padding:clamp(12px,3vw,24px)} .site-header{width:min(100%,1200px);margin-inline:auto}.site-logo{display:inline-block;font-size:1.25rem}
+.site-nav__list{display:flex;flex-direction:column;align-items:stretch;gap:8px;margin-top:16px}.site-nav__list li{min-width:0}.site-nav__list a{display:block;min-height:44px;padding:12px 14px;overflow-wrap:anywhere}
+.hero{display:grid;gap:24px;width:min(100%,1200px);margin:0 auto 32px;padding:clamp(20px,5vw,48px)}.hero h1{font-size:clamp(1.8rem,7vw,3.5rem);line-height:1.1;overflow-wrap:anywhere}
+.products-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}.product-card{min-width:0}.product-card h3,.product-card p{overflow-wrap:anywhere}.product-card__media{display:block;width:100%}.product-card__image{display:block;width:100%;aspect-ratio:4/3;height:auto;object-fit:contain;background:#fff;border-radius:8px}
+.catalog-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;width:min(100%,1200px);margin:0 auto 32px}.catalog-filters{order:-1;min-width:0}.catalog-products{min-width:0}.filters-form input[type="number"]{width:100%;min-height:44px}
+.product-page{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;width:min(100%,1200px);margin:24px auto}.product-page__image{min-width:0;min-height:0}.product-page__image img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain}
+.product-page__specs{display:grid;grid-template-columns:minmax(0,1fr);gap:4px}.product-page__specs dt{font-weight:700}.product-page__specs dd{margin:0 0 12px}
+.order-page{width:min(100%,720px);margin:24px auto}.order-form,.order-page__form{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}.order-page__form fieldset{min-width:0}.form-field{min-width:0}
+.form-field input,.form-field select,.form-field textarea,.order-form input,.order-form select,.order-form textarea{width:100%;max-width:100%;min-height:44px;font:inherit}
+.form-field input[type="checkbox"],.form-field input[type="radio"],.order-form input[type="checkbox"],.order-form input[type="radio"]{width:auto;min-height:0}.form-field textarea,.order-form textarea{min-height:120px;resize:vertical}
+.form-actions{display:flex;flex-wrap:wrap;gap:12px}.form-actions button,.button{min-height:44px}
+.table-wrapper{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}.product-table{width:100%;min-width:640px;border-collapse:collapse}.product-table th,.product-table td{padding:12px;border:1px solid var(--color-border,#ddd);text-align:left}
+.order-dialog{width:min(100% - 32px,560px);max-width:560px;max-height:calc(100vh - 32px);overflow:auto}.order-dialog::backdrop{background:rgb(0 0 0 / .5)}
+.skip-link{position:absolute;left:16px;top:-100px;z-index:1000;padding:8px 12px;color:#fff;background:#111;border-radius:6px;text-decoration:none}.skip-link:focus,.skip-link:focus-visible{top:16px}
+:focus-visible{outline:3px solid var(--color-primary,#0057b8);outline-offset:3px}a{overflow-wrap:anywhere}footer{overflow-wrap:anywhere}
+@media(min-width:640px){.products-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-nav__list{flex-direction:row;flex-wrap:wrap;align-items:center}.site-nav__list a{display:inline-flex;align-items:center}}
+@media(min-width:768px){.order-page__form{grid-template-columns:repeat(2,minmax(0,1fr))}.order-page__form fieldset{grid-column:1/-1}}
+@media(min-width:900px){.product-page{grid-template-columns:minmax(280px,1fr) minmax(0,1fr);align-items:start}}
+@media(min-width:1024px){.products-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.catalog-layout{grid-template-columns:260px minmax(0,1fr);align-items:start}.catalog-filters{position:sticky;top:16px;order:initial}.product-page__specs{grid-template-columns:max-content minmax(0,1fr);gap:8px 16px}.product-page__specs dd{margin:0}}
+@media(min-width:1280px){.products-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
